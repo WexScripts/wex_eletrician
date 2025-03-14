@@ -82,7 +82,6 @@ Eoptions = {
         notify(locale("el_menuTitle"), locale("el_goback"), 1500, "success")
         SetNewWaypoint(Config.Eletrician.pedCoords)
         workdone = true
-        print("uz ne")
     else
         notify(locale("el_menuTitle"), locale("el_fixNotify"), 1500, "success")
         SetNewWaypoint(coords)
@@ -102,8 +101,6 @@ Eoptions = {
                         exports.ox_target:removeZone("wex_eletrician:elBox")
                         TriggerServerEvent("wex_eletrician:GetReward","WEXBrrsda5", cache.serverId, "money", math.random(Config.Eletrician.minMoney, Config.Eletrician.maxMoney))
                         elroute() 
-                        marker:draw()
-                        print("jestejo")
                     end)
                 end
             }
