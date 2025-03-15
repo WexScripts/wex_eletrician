@@ -3,7 +3,7 @@ games { 'rdr3', 'gta5' }
 lua54 'yes'
 author 'tobix'
 description 'easy eletrician job'
-version '1.0.0'
+version '1.0.1'
 
 files {
     'locales/*.json'
@@ -20,3 +20,4 @@ client_scripts {
     'client/*.lua'
 }
 
+dependency 'mx_fixwiring'
